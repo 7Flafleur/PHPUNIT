@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="/root/PHPUNITCourse/phpunit.xml" tests="3" assertions="4" errors="0" failures="0" skipped="0" time="0.001898">
+    <testsuite name="Test Suite" tests="3" assertions="4" errors="0" failures="0" skipped="0" time="0.001898">
+      <testsuite name="QueueTest" file="/root/PHPUNITCourse/tests/QueueTest.php" tests="3" assertions="4" errors="0" failures="0" skipped="0" time="0.001898">
+        <testcase name="testNewQueueIsEmpty" file="/root/PHPUNITCourse/tests/QueueTest.php" line="9" class="QueueTest" classname="QueueTest" assertions="1" time="0.001667"/>
+        <testcase name="testAnItemIsAddedToTheQueue" file="/root/PHPUNITCourse/tests/QueueTest.php" line="19" class="QueueTest" classname="QueueTest" assertions="1" time="0.000132"/>
+        <testcase name="testAnItemIsREmovedFromTheQueue" file="/root/PHPUNITCourse/tests/QueueTest.php" line="30" class="QueueTest" classname="QueueTest" assertions="2" time="0.000099"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

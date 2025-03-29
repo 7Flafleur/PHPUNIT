@@ -5,6 +5,13 @@ use PHPUnit\Framework\TestCase;
 
 class QueueTest extends TestCase
 {
+    protected function setUp(): void
+    {
+
+    }
+
+
+    // test depended on = producer
     public function testNewQueueIsEmpty(): Queue
     {
         $queue = new Queue;
@@ -14,6 +21,7 @@ class QueueTest extends TestCase
         return $queue;
     }
 
+    // dependend test = consumer
     #[Depends('testNewQueueIsEmpty')]
     public function testAnItemIsAddedToTheQueue(Queue $queue): Queue
     {

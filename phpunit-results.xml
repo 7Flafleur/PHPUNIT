@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="/root/PHPUNITCourse/phpunit.xml" tests="4" assertions="5" errors="0" failures="0" skipped="0" time="0.006093">
-    <testsuite name="Test Suite" tests="4" assertions="5" errors="0" failures="0" skipped="0" time="0.006093">
-      <testsuite name="QueueTest" file="/root/PHPUNITCourse/tests/QueueTest.php" tests="4" assertions="5" errors="0" failures="0" skipped="0" time="0.006093">
-        <testcase name="testNewQueueIsEmpty" file="/root/PHPUNITCourse/tests/QueueTest.php" line="40" class="QueueTest" classname="QueueTest" assertions="1" time="0.005144"/>
-        <testcase name="testAnItemIsAddedToTheQueue" file="/root/PHPUNITCourse/tests/QueueTest.php" line="49" class="QueueTest" classname="QueueTest" assertions="1" time="0.000475"/>
-        <testcase name="testAnItemIsRemovedFromTheQueue" file="/root/PHPUNITCourse/tests/QueueTest.php" line="58" class="QueueTest" classname="QueueTest" assertions="2" time="0.000278"/>
-        <testcase name="testAnItemIsRemovedFromTheFrontOfTheQueue" file="/root/PHPUNITCourse/tests/QueueTest.php" line="68" class="QueueTest" classname="QueueTest" assertions="1" time="0.000197"/>
+  <testsuite name="/root/PHPUNITCourse/phpunit.xml" tests="6" assertions="8" errors="0" failures="0" skipped="0" time="0.005020">
+    <testsuite name="Test Suite" tests="6" assertions="8" errors="0" failures="0" skipped="0" time="0.005020">
+      <testsuite name="QueueTest" file="/root/PHPUNITCourse/tests/QueueTest.php" tests="6" assertions="8" errors="0" failures="0" skipped="0" time="0.005020">
+        <testcase name="testNewQueueIsEmpty" file="/root/PHPUNITCourse/tests/QueueTest.php" line="40" class="QueueTest" classname="QueueTest" assertions="1" time="0.003303"/>
+        <testcase name="testAnItemIsAddedToTheQueue" file="/root/PHPUNITCourse/tests/QueueTest.php" line="49" class="QueueTest" classname="QueueTest" assertions="1" time="0.000323"/>
+        <testcase name="testAnItemIsRemovedFromTheQueue" file="/root/PHPUNITCourse/tests/QueueTest.php" line="58" class="QueueTest" classname="QueueTest" assertions="2" time="0.000200"/>
+        <testcase name="testAnItemIsRemovedFromTheFrontOfTheQueue" file="/root/PHPUNITCourse/tests/QueueTest.php" line="68" class="QueueTest" classname="QueueTest" assertions="1" time="0.000196"/>
+        <testcase name="testMaximumNumberOfItemsCanBeAdded" file="/root/PHPUNITCourse/tests/QueueTest.php" line="78" class="QueueTest" classname="QueueTest" assertions="1" time="0.000194"/>
+        <testcase name="testExceptionThrownWhenAddingAnItemToAFullQueue" file="/root/PHPUNITCourse/tests/QueueTest.php" line="87" class="QueueTest" classname="QueueTest" assertions="2" time="0.000804"/>
       </testsuite>
     </testsuite>
   </testsuite>

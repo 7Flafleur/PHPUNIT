@@ -75,6 +75,29 @@ class QueueTest extends TestCase
 
     }
 
+    public function testMaximumNumberOfItemsCanBeAdded()
+    {
+        for ($i=0; $i<Queue::MAX_ITEMS;$i++){
+            static::$queue->push($i);
+        }
+
+        $this->assertSame(Queue::MAX_ITEMS, static::$queue->getCount());
+    }
+
+    public function testExceptionThrownWhenAddingAnItemToAFullQueue()
+    {
+        for ($i=0; $i<Queue::MAX_ITEMS;$i++){
+            static::$queue->push($i);
+        }
+
+        $this->expectException(QueueException::class);
+        $this->expectExceptionMessage('Queue is full');
+        static::$queue->push("one too many");
+
+
+
+    }
+
 
 
 }

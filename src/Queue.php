@@ -1,14 +1,21 @@
 <?php
 
+require "QueueException.php";
 
 class Queue
 {
+    public const MAX_ITEMS =5;
 
     protected $items = [];
 
     // append to the end of the array
     public function push($item):void
     {
+        if ($this->getCount() == static::MAX_ITEMS)
+        {
+            throw new QueueException("Queue is full");
+        }
+
         $this->items[] = $item;
     }
 

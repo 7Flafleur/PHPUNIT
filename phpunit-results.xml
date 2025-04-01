@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="/root/PHPUNITCourse/phpunit.xml" tests="3" assertions="4" errors="0" failures="0" skipped="0" time="0.004334">
-    <testsuite name="Test Suite" tests="3" assertions="4" errors="0" failures="0" skipped="0" time="0.004334">
-      <testsuite name="QueueTest" file="/root/PHPUNITCourse/tests/QueueTest.php" tests="3" assertions="4" errors="0" failures="0" skipped="0" time="0.004334">
-        <testcase name="testNewQueueIsEmpty" file="/root/PHPUNITCourse/tests/QueueTest.php" line="8" class="QueueTest" classname="QueueTest" assertions="1" time="0.003930"/>
-        <testcase name="testAnItemIsAddedToTheQueue" file="/root/PHPUNITCourse/tests/QueueTest.php" line="18" class="QueueTest" classname="QueueTest" assertions="1" time="0.000265"/>
-        <testcase name="testAnItemIsRemovedFromTheQueue" file="/root/PHPUNITCourse/tests/QueueTest.php" line="28" class="QueueTest" classname="QueueTest" assertions="2" time="0.000140"/>
+  <testsuite name="/root/PHPUNITCourse/phpunit.xml" tests="3" assertions="4" errors="0" failures="0" skipped="0" time="0.006850">
+    <testsuite name="Test Suite" tests="3" assertions="4" errors="0" failures="0" skipped="0" time="0.006850">
+      <testsuite name="QueueTest" file="/root/PHPUNITCourse/tests/QueueTest.php" tests="3" assertions="4" errors="0" failures="0" skipped="0" time="0.006850">
+        <testcase name="testNewQueueIsEmpty" file="/root/PHPUNITCourse/tests/QueueTest.php" line="19" class="QueueTest" classname="QueueTest" assertions="1" time="0.006089"/>
+        <testcase name="testAnItemIsAddedToTheQueue" file="/root/PHPUNITCourse/tests/QueueTest.php" line="28" class="QueueTest" classname="QueueTest" assertions="1" time="0.000446"/>
+        <testcase name="testAnItemIsRemovedFromTheQueue" file="/root/PHPUNITCourse/tests/QueueTest.php" line="38" class="QueueTest" classname="QueueTest" assertions="2" time="0.000316"/>
       </testsuite>
     </testsuite>
   </testsuite>

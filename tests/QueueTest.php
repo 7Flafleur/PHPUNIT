@@ -6,25 +6,41 @@ use PHPUnit\Framework\TestCase;
 class QueueTest extends TestCase
 {
 
-    protected $queue;
+    // static = belongs to class, shared across ll instances
+    protected static $queue;
 
-    //fixture
+    //fixture, run before every single test method
     protected function setUp(): void
     {
-        $this->queue = new Queue;
+        static::$queue->clear();
     }
 
-    //mainly used when creating external resources
-    protected function tearDown(): void
+    // //mainly used when creating external resources
+    // protected function tearDown(): void
+    // {
+    //     unset($this->queue);
+    // }
+
+    // just executed once,before the first test. Called without creating an instance (static)
+    public static function setUpBeforeClass(): void
     {
-        unset($this->queue);
+        // could be connection to a queue server
+        static::$queue = new Queue;
+
     }
 
-    // test depended on = producer
+    // just executed once,after the last test
+    public static function tearDownAfterClass(): void
+    {
+        // could be disconnection from a server,clos db connection
+        static::$queue = null;
+    }
+
+    // test depended on = producer if no fixture is used
     public function testNewQueueIsEmpty()
     {
 
-        $this->assertSame(0, $this->queue->getCount());
+        $this->assertSame(0, static::$queue->getCount());
 
     }
 
@@ -32,26 +48,30 @@ class QueueTest extends TestCase
     // #[Depends('testNewQueueIsEmpty')]
     public function testAnItemIsAddedToTheQueue()
     {
-        $this->queue->push('hello');
+        static::$queue->push('hello');
 
-        $this->assertSame(1, $this->queue->getCount());
+        $this->assertSame(1, static::$queue->getCount());
 
     }
 
-    //
 
     public function testAnItemIsRemovedFromTheQueue(): void
     {
-        $this->queue->push('test');
-        $item = $this->queue->pop();
+        static::$queue->push('test');
+        $item = static::$queue->pop();
 
-        $this->assertSame(0, $this->queue->getCount());
+        $this->assertSame(0, static::$queue->getCount());
         $this->assertSame('test', $item);
     }
 
 
     public function testAnItemIsRemovedFromTheFrontOfTheQueue()
     {
+        static::$queue->push('first');
+        static::$queue->push('second');
+
+        $item = static::$queue->pop();
+        $this->assertSame('first', $item);
 
     }
 

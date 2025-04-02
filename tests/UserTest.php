@@ -2,6 +2,8 @@
 
 use PHPUnit\Framework\TestCase;
 
+use function PHPUnit\Framework\once;
+
 class UserTest extends TestCase
 {
     public function testReturnsFullName()
@@ -25,9 +27,13 @@ class UserTest extends TestCase
     {
         $user = new User;
 
+        //returns same object type as original class
         $mock_mailer = $this->createMock(Mailer::class);
 
-        $mock_mailer->method('sendMessage')
+
+        $mock_mailer->expects($this->once()) // Matcher tests if method has benn called
+                    ->method('sendMessage')
+                    ->with($this->equalTo('test@example.com'), $this->equalTo('Hello'))
                     ->willReturn(true);
 
         $user->setMailer($mock_mailer);
@@ -38,3 +44,6 @@ class UserTest extends TestCase
 
     }
 }
+
+
+

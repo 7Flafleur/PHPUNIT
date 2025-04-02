@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="/root/PHPUNITCourse/phpunit.xml" tests="10" assertions="15" errors="0" failures="0" skipped="0" time="0.027848">
-    <testsuite name="Test Suite" tests="10" assertions="15" errors="0" failures="0" skipped="0" time="0.027848">
-      <testsuite name="MockTest" file="/root/PHPUNITCourse/tests/MockTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.014680">
-        <testcase name="testMock" file="/root/PHPUNITCourse/tests/MockTest.php" line="7" class="MockTest" classname="MockTest" assertions="1" time="0.014680"/>
+  <testsuite name="/root/PHPUNITCourse/phpunit.xml" tests="11" assertions="16" errors="0" failures="0" skipped="0" time="0.024676">
+    <testsuite name="Test Suite" tests="11" assertions="16" errors="0" failures="0" skipped="0" time="0.024676">
+      <testsuite name="MockTest" file="/root/PHPUNITCourse/tests/MockTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.013650">
+        <testcase name="testMock" file="/root/PHPUNITCourse/tests/MockTest.php" line="7" class="MockTest" classname="MockTest" assertions="1" time="0.013650"/>
       </testsuite>
-      <testsuite name="QueueTest" file="/root/PHPUNITCourse/tests/QueueTest.php" tests="6" assertions="8" errors="0" failures="0" skipped="0" time="0.007771">
-        <testcase name="testNewQueueIsEmpty" file="/root/PHPUNITCourse/tests/QueueTest.php" line="40" class="QueueTest" classname="QueueTest" assertions="1" time="0.000725"/>
-        <testcase name="testAnItemIsAddedToTheQueue" file="/root/PHPUNITCourse/tests/QueueTest.php" line="49" class="QueueTest" classname="QueueTest" assertions="1" time="0.000800"/>
-        <testcase name="testAnItemIsRemovedFromTheQueue" file="/root/PHPUNITCourse/tests/QueueTest.php" line="58" class="QueueTest" classname="QueueTest" assertions="2" time="0.000729"/>
-        <testcase name="testAnItemIsRemovedFromTheFrontOfTheQueue" file="/root/PHPUNITCourse/tests/QueueTest.php" line="68" class="QueueTest" classname="QueueTest" assertions="1" time="0.000670"/>
-        <testcase name="testMaximumNumberOfItemsCanBeAdded" file="/root/PHPUNITCourse/tests/QueueTest.php" line="78" class="QueueTest" classname="QueueTest" assertions="1" time="0.001691"/>
-        <testcase name="testExceptionThrownWhenAddingAnItemToAFullQueue" file="/root/PHPUNITCourse/tests/QueueTest.php" line="87" class="QueueTest" classname="QueueTest" assertions="2" time="0.003156"/>
+      <testsuite name="QueueTest" file="/root/PHPUNITCourse/tests/QueueTest.php" tests="6" assertions="8" errors="0" failures="0" skipped="0" time="0.003261">
+        <testcase name="testNewQueueIsEmpty" file="/root/PHPUNITCourse/tests/QueueTest.php" line="40" class="QueueTest" classname="QueueTest" assertions="1" time="0.000529"/>
+        <testcase name="testAnItemIsAddedToTheQueue" file="/root/PHPUNITCourse/tests/QueueTest.php" line="49" class="QueueTest" classname="QueueTest" assertions="1" time="0.000293"/>
+        <testcase name="testAnItemIsRemovedFromTheQueue" file="/root/PHPUNITCourse/tests/QueueTest.php" line="58" class="QueueTest" classname="QueueTest" assertions="2" time="0.000408"/>
+        <testcase name="testAnItemIsRemovedFromTheFrontOfTheQueue" file="/root/PHPUNITCourse/tests/QueueTest.php" line="68" class="QueueTest" classname="QueueTest" assertions="1" time="0.000270"/>
+        <testcase name="testMaximumNumberOfItemsCanBeAdded" file="/root/PHPUNITCourse/tests/QueueTest.php" line="78" class="QueueTest" classname="QueueTest" assertions="1" time="0.000357"/>
+        <testcase name="testExceptionThrownWhenAddingAnItemToAFullQueue" file="/root/PHPUNITCourse/tests/QueueTest.php" line="87" class="QueueTest" classname="QueueTest" assertions="2" time="0.001404"/>
       </testsuite>
-      <testsuite name="UserTest" file="/root/PHPUNITCourse/tests/UserTest.php" tests="3" assertions="6" errors="0" failures="0" skipped="0" time="0.005397">
-        <testcase name="testReturnsFullName" file="/root/PHPUNITCourse/tests/UserTest.php" line="9" class="UserTest" classname="UserTest" assertions="1" time="0.000771"/>
-        <testcase name="testFullNameIsEmptyByDefault" file="/root/PHPUNITCourse/tests/UserTest.php" line="19" class="UserTest" classname="UserTest" assertions="1" time="0.001033"/>
-        <testcase name="testNotificationIsSent" file="/root/PHPUNITCourse/tests/UserTest.php" line="26" class="UserTest" classname="UserTest" assertions="4" time="0.003593"/>
+      <testsuite name="UserTest" file="/root/PHPUNITCourse/tests/UserTest.php" tests="4" assertions="7" errors="0" failures="0" skipped="0" time="0.007765">
+        <testcase name="testReturnsFullName" file="/root/PHPUNITCourse/tests/UserTest.php" line="9" class="UserTest" classname="UserTest" assertions="1" time="0.000769"/>
+        <testcase name="testFullNameIsEmptyByDefault" file="/root/PHPUNITCourse/tests/UserTest.php" line="19" class="UserTest" classname="UserTest" assertions="1" time="0.000221"/>
+        <testcase name="testNotificationIsSent" file="/root/PHPUNITCourse/tests/UserTest.php" line="26" class="UserTest" classname="UserTest" assertions="4" time="0.005831"/>
+        <testcase name="testCannotNotifyUserWithNoEmail" file="/root/PHPUNITCourse/tests/UserTest.php" line="47" class="UserTest" classname="UserTest" assertions="1" time="0.000944"/>
       </testsuite>
     </testsuite>
   </testsuite>

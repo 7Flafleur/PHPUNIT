@@ -1,0 +1,18 @@
+<?php
+
+interface GatewayInterface
+{
+    public function charge($amount);
+
+}
+
+
+class PaymentGateWay implements GatewayInterface
+{
+    public function charge($amount)
+    {
+
+    }
+
+
+}

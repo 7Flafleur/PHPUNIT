@@ -1,0 +1,22 @@
+<?php
+
+use PHPUnit\Framework\TestCase;
+use Mockery\Adapter\Phpunit\MockeryTestCase;
+
+//Methods to use Mockery in PHPUnit:
+
+// a. use Mockery in tearDown method to use it in PHPUnit
+// class ExampleTest extends TestCase
+// {
+//     public function tearDown():void
+//     {
+//         Mockery::close();
+//     }
+// }
+
+// b. import and extend MockeryTestCase
+class ExampleTest extends MockeryTestCase
+{
+
+
+}
